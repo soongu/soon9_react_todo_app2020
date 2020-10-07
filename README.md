@@ -1,5 +1,6 @@
 # 일정관리 앱 
 
+## v.1.0.0
 ### 초기 세팅
 - `$ yarn create react-app .`
 - `$ yarn add node-sass classnames react-icons`
@@ -16,3 +17,10 @@ todo객체를 props로 받아 와서 상태에 따른 다른 스타일의  UI를
 
 1. TodoList: todos배열을 props로 받아 온 후, 이를 배열 내장 함수 map을 사용해서  
 여러 개의 TodoListItem 컴포넌트로 변환하여 보여 줍니다.
+
+## v.1.1.0
+### 변경사항
+
+1. React.memo와 함수형 업데이트를 통해 리렌더링시 발생하는 성능저하를 해결했습니다.
+2. react-virtualized를 사용하여 스크롤되기 전에 숨겨진 데이터 렌더링을 하지 않도록 처리했습니다.
+`$ yarn add react-virtualized`
